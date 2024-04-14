@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href=""><img src="" alt="">x</a>
+        <div style="display: flex;flex-direction: row; gap: 12px;">
+            <li><a href="" class="btn">Registrovat se</a></li>
+            <li><a href="" class="btn">Přihlásit se</a></li>
+        </div>
+    </nav>
+
+    
+
+    <div class="container">
+        <h1>Generátor</h1>
+        <div class="options" border: 1px solid blue;>
+          
+            <div>
+                <input type="checkbox" id="uppercase" name="uppercase">
+                <label for="uppercase">Velká písmena</label>
+            </div>
+            <div>
+                <input type="checkbox" id="numbers" name="numbers">
+                <label for="numbers">Čísla--------------</label>
+            </div>
+            <div>
+                <input type="checkbox" id="specialCharacters" name="specialCharacters">
+                <label for="specialCharacters">Speciální znaky</label>
+            </div>
+          <div class="length">
+            <label for="length">Délka hesla: <span id="lengthValue">8</span></label>
+            <input type="range" id="length" name="length" min="4" max="20" value="8">
+        </div>
+        </div>
+        <button id="generate">Generovat</button>
+        <div class="password" id="password"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
